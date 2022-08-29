@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size:1.6rem;
+}
+
+.container{
+    /*width: 90%;*/
+    max-width: 875px;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media (max-width: 375px){
+    .row{
+        flex-direction: column;
+    }
+}
+.sedan, .suv, .luxury{
+    width: 33.3%;
+    padding: 1.6em;
+    color: #fff;
+}
+@media (max-width: 375px){
+    .sedan, .suv, .luxury{
+        width: 100%;
+    }
+}
+.sedan{
+    background-color: #e28525;
+}
+.suv{
+    background-color: #016972;
+}
+.luxury{
+    background-color: #00403f;
+}
+
+.sedan .link{
+    color: #e28525;
+}
+
+.suv .link{
+    color:#016972
+}
+
+.luxury .link{
+    color: #00403f;
+}
+
+.vision{
+    color: #b7d1bb;
+    z-index: 10;
+    margin: 1.6em .5em;
+}
+
+
+.title{
+    font-family: "Big Shoulders Display";
+    margin: .6em 0;
+    font-weight: 700;
+}
+
+.describe{
+    font-family: "Lexend Deca";
+    font-size: 1.5rem;
+    margin: 1.6em 1.6em 1.6em 0; 
+    font-weight: 400;
+}
+
+.link{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    border: #fff .1rem solid;
+    border-radius: 3rem;
+    padding: 1em 2em;
+    margin: 2.5rem 0;
+    font-weight: 400;
+}
+.link:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+}
